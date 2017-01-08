@@ -1,0 +1,5 @@
+.idea/
+py3env/
+__pycache__/
+config-personal.txt
+cards.db
