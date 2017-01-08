@@ -24,6 +24,25 @@
             </div>
         </div>
         -->
+		<div class="row">
+        <div class="col-xs-12 text-center">
+            <a href="javascript:" class="btn btn-primary btn-sm flipCard">
+                <i class="fa fa-exchange"></i>
+                Flip Card
+            </a>
+            &nbsp;
+            <a href="{{ url_for('mark_known', card_id=card.id, card_type=card_type) }}" class="btn btn-success btn-sm">
+                <i class="fa fa-check"></i>
+                I Know It
+            </a>
+            &nbsp;
+            <a href="{{ url_for(card_type) }}" class="btn btn-sm btn-primary">
+                Next Card
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+	<div class="row">
         <div class="col-xs-12">
             <div class="panel panel-default cardFront">
                 <div class="panel-body">
@@ -53,7 +72,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>   </div>
         <!--
         <div class="col-xs-2">
             <div class="alignContainer">
@@ -65,27 +84,6 @@
             </div>
         </div>
         -->
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12 text-center">
-            <a href="javascript:" class="btn btn-primary flipCard">
-                <i class="fa fa-exchange"></i>
-                Flip Card
-            </a>
-            &nbsp;
-            &nbsp;
-            <a href="{{ url_for('mark_known', card_id=card.id, card_type=card_type) }}" class="btn btn-success">
-                <i class="fa fa-check"></i>
-                I Know It
-            </a>
-            &nbsp;
-            &nbsp;
-            <a href="{{ url_for(card_type) }}" class="btn btn-primary">
-                Next Card
-                <i class="fa fa-arrow-right"></i>
-            </a>
-        </div>
     </div>
     <div class="row">
         <div class="col-xs-12 text-center">
