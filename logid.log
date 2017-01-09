@@ -1,0 +1,148 @@
+cs-flash-cards
+cs-flash-cards
+Untagged: cs-flash-cards:latest
+Deleted: sha256:3d940af2b6f5071c611f8b1d7f14ebdda66a4178d5148033aede964a690d9b47
+Deleted: sha256:08b82daa6815f35b1ce8fd903130adb23204314f9abb5f6066dcaa1b323b04d4
+Deleted: sha256:bc77d728411b4a4d8143f98bf0ac229def591a649a788ec58ab1f2409e920303
+Deleted: sha256:a5b92d100829ad0984b657e0647810b054c6f4922627be473fcbfc4fa1267cee
+Deleted: sha256:70c035d5f13b821282f1e646e57c66febbf34d391329dd2225701eec3290fbd5
+Deleted: sha256:e256be861e3b159227569336293866ff5db49c28cde01ba674d3820a9e20a08c
+Deleted: sha256:62ac99f7f4ee1b4dba954b14dc992b9367172c9f46ae5654c49daa7018280b28
+Deleted: sha256:8c36adfb6e0f373e60d06cfc5aeaacdc45852b2f4e72790c83ba4238ea175caa
+Deleted: sha256:6035f1f58a549ec5efd20d4014b94386f9acfb9d11a5461747221784cc97c9ab
+Deleted: sha256:0ef0c50fd60b9e979dc95b847a6b497747c261f4af6e8ff99fae01333d662e8e
+Deleted: sha256:9a589926f24821ff80e8579c244c939c496fbe1378fbc551aefc8771b541bd8e
+Deleted: sha256:3428f7d3b52a338f07b6c6573244778304dbab68a3e949dd2de68e24e69e328b
+Sending build context to Docker daemon 557.1 kBSending build context to Docker daemon 1.114 MBSending build context to Docker daemon 1.671 MBSending build context to Docker daemon 1.885 MB
+Step 1 : FROM python:3.5
+ ---> 689613c94fff
+Step 2 : MAINTAINER Konstantin <ktenman@gmail.com>
+ ---> Using cache
+ ---> ed584f18deee
+Step 3 : ADD . /src
+ ---> f3ea8682d010
+Removing intermediate container bf0b06c4e4e8
+Step 4 : WORKDIR /src
+ ---> Running in 1076c0707e38
+ ---> e091b4d9b3ab
+Removing intermediate container 1076c0707e38
+Step 5 : RUN pip install --upgrade pip     && pip install flask gunicorn
+ ---> Running in 56184da3db66
+Requirement already up-to-date: pip in /usr/local/lib/python3.5/site-packages
+Collecting flask
+  Downloading Flask-0.12-py2.py3-none-any.whl (82kB)
+Collecting gunicorn
+  Downloading gunicorn-19.6.0-py2.py3-none-any.whl (114kB)
+Collecting itsdangerous>=0.21 (from flask)
+  Downloading itsdangerous-0.24.tar.gz (46kB)
+Collecting Werkzeug>=0.7 (from flask)
+  Downloading Werkzeug-0.11.15-py2.py3-none-any.whl (307kB)
+Collecting click>=2.0 (from flask)
+  Downloading click-6.7-py2.py3-none-any.whl (71kB)
+Collecting Jinja2>=2.4 (from flask)
+  Downloading Jinja2-2.9.3-py2.py3-none-any.whl (274kB)
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.4->flask)
+  Downloading MarkupSafe-0.23.tar.gz
+Installing collected packages: itsdangerous, Werkzeug, click, MarkupSafe, Jinja2, flask, gunicorn
+  Running setup.py install for itsdangerous: started
+    Running setup.py install for itsdangerous: finished with status 'done'
+  Running setup.py install for MarkupSafe: started
+    Running setup.py install for MarkupSafe: finished with status 'done'
+Successfully installed Jinja2-2.9.3 MarkupSafe-0.23 Werkzeug-0.11.15 click-6.7 flask-0.12 gunicorn-19.6.0 itsdangerous-0.24
+ ---> 75ab3a59936d
+Removing intermediate container 56184da3db66
+Step 6 : COPY entrypoint.sh /
+ ---> 71a01047a142
+Removing intermediate container 45b9371acad1
+Step 7 : RUN chmod +x /entrypoint.sh
+ ---> Running in 3070078cc203
+ ---> 9ebafbefd6d4
+Removing intermediate container 3070078cc203
+Step 8 : VOLUME /src/db
+ ---> Running in fd38e711cfb1
+ ---> ee76847f0a3c
+Removing intermediate container fd38e711cfb1
+Step 9 : EXPOSE 8000
+ ---> Running in da221fa5a13a
+ ---> 7f28228f9cbc
+Removing intermediate container da221fa5a13a
+Step 10 : CMD /entrypoint.sh
+ ---> Running in f700d2ab6baa
+ ---> 7078c752edaf
+Removing intermediate container f700d2ab6baa
+Successfully built 7078c752edaf
+ffa4c44092bb7b4aecd0a07016e8055b8911c0f49978626a360ea48b2c94ba71
+teoreetiline
+teoreetiline
+Untagged: teoreetiline:latest
+Deleted: sha256:18a0178f9d9321cde3a7532d878b6410739c244adfea59194d4bc28957092119
+Deleted: sha256:bc59bf8e0eb0931f3645450f3eed2d7d80854feb340bd7357b88f0359d22bf57
+Deleted: sha256:8447640460f7f61db700a66f02bd0d4b8d2c9976f7903b874e7d072ad726df76
+Deleted: sha256:540632f7de3b5e7551b99594eff891c86754534782106fb22579f8f06d32cd0b
+Deleted: sha256:4d18b6f81c064f9f218b6a36281024416695ed67fd60d14071b7a4781c2603e9
+Deleted: sha256:a1c4f50b32056660ea1fce2fe12d319544e4ff07906d0963f0bb8c4f5a3936ee
+Deleted: sha256:61c4d391c4e40c60423a364c7340471a2d74c1df9bbe5e38c355fbac0dbba4b6
+Deleted: sha256:be33167d140ee991037eb5bf351d23f40cb4d6ca45184006d70f288c098f7e4f
+Deleted: sha256:3ad8cc2c80e9fa79640b2ad1fd7aafa65e1b9fb28e3511ff9df9f616d678091c
+Deleted: sha256:a605b979535df6a8ab3279b27902c142424f834f11aa3b6aec64d65cf63e1965
+Deleted: sha256:17b6b38a159a0d479172584be580cf6d3d7dccbd4e21697e0a0c8d543f59857e
+Deleted: sha256:fcabad8b2d1fbffa4ee0330d79e5030a734dfb424d56c085a43b65a0367f3359
+Sending build context to Docker daemon 557.1 kBSending build context to Docker daemon 1.114 MBSending build context to Docker daemon 1.671 MBSending build context to Docker daemon 1.888 MB
+Step 1 : FROM python:3.5
+ ---> 689613c94fff
+Step 2 : MAINTAINER Konstantin <ktenman@gmail.com>
+ ---> Using cache
+ ---> ed584f18deee
+Step 3 : ADD . /src
+ ---> 5ad89ab29e7d
+Removing intermediate container 5eb6fc2227fd
+Step 4 : WORKDIR /src
+ ---> Running in 1d2c4970fc52
+ ---> 04800900a1c7
+Removing intermediate container 1d2c4970fc52
+Step 5 : RUN pip install --upgrade pip     && pip install flask gunicorn
+ ---> Running in 0a1fea23e0f2
+Requirement already up-to-date: pip in /usr/local/lib/python3.5/site-packages
+Collecting flask
+  Downloading Flask-0.12-py2.py3-none-any.whl (82kB)
+Collecting gunicorn
+  Downloading gunicorn-19.6.0-py2.py3-none-any.whl (114kB)
+Collecting itsdangerous>=0.21 (from flask)
+  Downloading itsdangerous-0.24.tar.gz (46kB)
+Collecting click>=2.0 (from flask)
+  Downloading click-6.7-py2.py3-none-any.whl (71kB)
+Collecting Werkzeug>=0.7 (from flask)
+  Downloading Werkzeug-0.11.15-py2.py3-none-any.whl (307kB)
+Collecting Jinja2>=2.4 (from flask)
+  Downloading Jinja2-2.9.3-py2.py3-none-any.whl (274kB)
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.4->flask)
+  Downloading MarkupSafe-0.23.tar.gz
+Installing collected packages: itsdangerous, click, Werkzeug, MarkupSafe, Jinja2, flask, gunicorn
+  Running setup.py install for itsdangerous: started
+    Running setup.py install for itsdangerous: finished with status 'done'
+  Running setup.py install for MarkupSafe: started
+    Running setup.py install for MarkupSafe: finished with status 'done'
+Successfully installed Jinja2-2.9.3 MarkupSafe-0.23 Werkzeug-0.11.15 click-6.7 flask-0.12 gunicorn-19.6.0 itsdangerous-0.24
+ ---> 6b3706bf5f52
+Removing intermediate container 0a1fea23e0f2
+Step 6 : COPY entrypoint.sh /
+ ---> c68d3375d247
+Removing intermediate container 77156b6cc484
+Step 7 : RUN chmod +x /entrypoint.sh
+ ---> Running in cb1ba048528f
+ ---> d1102bae1f80
+Removing intermediate container cb1ba048528f
+Step 8 : VOLUME /src/db
+ ---> Running in 6971e469fea8
+ ---> 1a638c3af47e
+Removing intermediate container 6971e469fea8
+Step 9 : EXPOSE 8000
+ ---> Running in a96686584aaa
+ ---> 70ac720599bb
+Removing intermediate container a96686584aaa
+Step 10 : CMD /entrypoint.sh
+ ---> Running in 04ba87970e57
+ ---> cc5269d5e232
+Removing intermediate container 04ba87970e57
+Successfully built cc5269d5e232
+a0cb0f090d87a13b46450038b5182515d251c55a5630cf05945122d7ff8d4c3a
