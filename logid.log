@@ -1,74 +1,74 @@
 cs-flash-cards
 cs-flash-cards
 Untagged: cs-flash-cards:latest
-Deleted: sha256:70763d972fd35f5d968f674d581893319b1a8101d0372a5386fe6aa896adee0b
-Deleted: sha256:4737ffc1f75e3306b38b9ab7c2ce3c36ef1550418e43dd66d8dd5f0213542d88
-Deleted: sha256:6a56b9f2392c10491f6d9a4c6ea43990879a6643f9a7144303da076843d7e196
-Deleted: sha256:6c9372a2e2f734afdd0432f3900cc7628292f7366616c324ad34fd0d750d999f
-Deleted: sha256:547e60278d973f7e7f7deed50c15b2f859fa8c476085eca8b1b75844e1504302
-Deleted: sha256:4797b206be649af77a98202aa7a0a4948e7abb1ac6b72b8aa6ee8b9a5746a78c
-Deleted: sha256:ebd800a2c6df2881f2881e83c7a88eaaaed72a74cdbd2e622a18603c20b52872
-Deleted: sha256:18b26def7a34888cae74ae3848f2d37a955c28ea3126de8d862c6a390d0e41f8
-Deleted: sha256:6192794b4a84331da93852dca32d98e357f0f2a320fdaad29f8d5f9526a3932d
-Deleted: sha256:383cc5010ea1016e801778ee8b6f7c13e994410267e61402d27eae7bfabffdae
-Deleted: sha256:f359d119dce2d3b129381850ede5bb63ffdc5bbe7663d89a8f153fa62b5872ba
-Deleted: sha256:666dd72d7ca66756131d81666c6a5424626685ddd0345acc95fc7d9aa2a52312
-Sending build context to Docker daemon 557.1 kBSending build context to Docker daemon 1.114 MBSending build context to Docker daemon 1.671 MBSending build context to Docker daemon 2.228 MBSending build context to Docker daemon 2.264 MB
+Deleted: sha256:e1aae811bdabbf170ec0f1481e7bfdf8dca50a183d97786652faf1985f70cd03
+Deleted: sha256:2c5f8fdc049e1b87d0d2abc3cde5c4e3d8f74a66fd0d7a6b2ae72ad6132fddad
+Deleted: sha256:17819d68aa08e54a9352f8268a008778fec4aff103908b2d1417313335296501
+Deleted: sha256:12b8f0933c987ebad8a3cb3a6d0f1f5186d9b0d6ab82c32951110c9fcf40bc67
+Deleted: sha256:186592ac38f93d57de4162539b683c5cbb2752ae22705e242b15350083d7166e
+Deleted: sha256:0bf45806cba74e245fa1b9297f0204c27bc181d873e5bc4ab24a6e40029985fd
+Deleted: sha256:5db3562d2af7322a57c5dc8a679f635cb191aa433fc80421b77eb582527ed103
+Deleted: sha256:2627c304d5f5d7deb37e6b8d7eb87f8529ba03f1b207964f7e72c9ef57f84684
+Deleted: sha256:58c37d98a0e0d67a0e97d041803d8fb14934a0d658d595c673506377fc1ad36a
+Deleted: sha256:4476c27572265c3895c938f0940fd2c687a9c9fcbae40e009c485618d171ebc4
+Deleted: sha256:a6a870a3830744891d2356cbc53b6d444daa700f9303879f9c9de7fc85f0beb3
+Deleted: sha256:6468292ec8edc7339d9176bede1ff955b8914a72e678ac343685bb591f79bea1
+Sending build context to Docker daemon 557.1 kBSending build context to Docker daemon 1.114 MBSending build context to Docker daemon 1.671 MBSending build context to Docker daemon 2.228 MBSending build context to Docker daemon 2.785 MBSending build context to Docker daemon 3.012 MB
 Step 1 : FROM python:3.5
  ---> 689613c94fff
 Step 2 : MAINTAINER Konstantin <ktenman@gmail.com>
  ---> Using cache
  ---> ed584f18deee
 Step 3 : ADD . /src
- ---> 6f479d83d2ef
-Removing intermediate container dd85d464624e
+ ---> 865f00c0f8f5
+Removing intermediate container 2a31255461b9
 Step 4 : WORKDIR /src
- ---> Running in 3ee41e3bd490
- ---> a273852ceccc
-Removing intermediate container 3ee41e3bd490
+ ---> Running in cf75c16a05df
+ ---> 0fd833f40210
+Removing intermediate container cf75c16a05df
 Step 5 : RUN pip install --upgrade pip     && pip install flask gunicorn
- ---> Running in 8780608c2c32
+ ---> Running in 0369571cff00
 Requirement already up-to-date: pip in /usr/local/lib/python3.5/site-packages
 Collecting flask
   Downloading Flask-0.12-py2.py3-none-any.whl (82kB)
 Collecting gunicorn
   Downloading gunicorn-19.6.0-py2.py3-none-any.whl (114kB)
-Collecting Jinja2>=2.4 (from flask)
-  Downloading Jinja2-2.9.4-py2.py3-none-any.whl (274kB)
-Collecting click>=2.0 (from flask)
-  Downloading click-6.7-py2.py3-none-any.whl (71kB)
 Collecting Werkzeug>=0.7 (from flask)
   Downloading Werkzeug-0.11.15-py2.py3-none-any.whl (307kB)
 Collecting itsdangerous>=0.21 (from flask)
   Downloading itsdangerous-0.24.tar.gz (46kB)
+Collecting click>=2.0 (from flask)
+  Downloading click-6.7-py2.py3-none-any.whl (71kB)
+Collecting Jinja2>=2.4 (from flask)
+  Downloading Jinja2-2.9.4-py2.py3-none-any.whl (274kB)
 Collecting MarkupSafe>=0.23 (from Jinja2>=2.4->flask)
   Downloading MarkupSafe-0.23.tar.gz
-Installing collected packages: MarkupSafe, Jinja2, click, Werkzeug, itsdangerous, flask, gunicorn
-  Running setup.py install for MarkupSafe: started
-    Running setup.py install for MarkupSafe: finished with status 'done'
+Installing collected packages: Werkzeug, itsdangerous, click, MarkupSafe, Jinja2, flask, gunicorn
   Running setup.py install for itsdangerous: started
     Running setup.py install for itsdangerous: finished with status 'done'
+  Running setup.py install for MarkupSafe: started
+    Running setup.py install for MarkupSafe: finished with status 'done'
 Successfully installed Jinja2-2.9.4 MarkupSafe-0.23 Werkzeug-0.11.15 click-6.7 flask-0.12 gunicorn-19.6.0 itsdangerous-0.24
- ---> 77bdb1d7c8b7
-Removing intermediate container 8780608c2c32
+ ---> 13aa3b525edd
+Removing intermediate container 0369571cff00
 Step 6 : COPY entrypoint.sh /
- ---> e6ceb9cad8bf
-Removing intermediate container 574c51424a2e
+ ---> afe1b909896f
+Removing intermediate container f76d35bce2fb
 Step 7 : RUN chmod +x /entrypoint.sh
- ---> Running in 43376ca275b1
- ---> 49a0c8c9457c
-Removing intermediate container 43376ca275b1
+ ---> Running in 15121a67eb60
+ ---> 102157f1e0f3
+Removing intermediate container 15121a67eb60
 Step 8 : VOLUME /src/db
- ---> Running in 9cf4d15dda1a
- ---> 4175a2bae63a
-Removing intermediate container 9cf4d15dda1a
+ ---> Running in b2380022466f
+ ---> 101d6154602f
+Removing intermediate container b2380022466f
 Step 9 : EXPOSE 8000
- ---> Running in 9c472599702d
- ---> c81e8b8e25b9
-Removing intermediate container 9c472599702d
+ ---> Running in ae1b0a533447
+ ---> 18441d8fee8e
+Removing intermediate container ae1b0a533447
 Step 10 : CMD /entrypoint.sh
- ---> Running in 78983b0a7d0d
- ---> 3f860f48ee46
-Removing intermediate container 78983b0a7d0d
-Successfully built 3f860f48ee46
-4d102715947e427abb8db2b7cb102d74692b87eeb7bfe224b1e589a4e6f98378
+ ---> Running in 593676e63d66
+ ---> 55534f01cb9b
+Removing intermediate container 593676e63d66
+Successfully built 55534f01cb9b
+db0c73216cfc990fdebaa360559d05506b26f6e33aece66e9ac3460efd52d119

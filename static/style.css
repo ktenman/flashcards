@@ -17,7 +17,7 @@ textarea {
 }
 
 .alignMiddle {
-    height: 20em;
+    height: 14em;
     display: table-cell;
     vertical-align: middle;
 }
@@ -27,7 +27,7 @@ textarea {
 }
 
 .largerText {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 
