@@ -6,9 +6,11 @@
     <title>Teoreetiline Informaatika</title>
     <meta name="description" content="">
     <meta name="google" value="notranslate">
-    <meta name="viewport" content="width=device-width,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
-    <meta name="apple-mobile-web-app-title" content="">
-    <meta name="application-name" content="Estimol.eu">
+	<meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
+	<meta name="apple-mobile-web-app-title" content="Teoreetiline Informaatika" />
+    <meta name="application-name" content="Teoreetiline Informaatika">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white" />
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!--<meta name="viewport" content="width=device-width">-->
@@ -20,12 +22,9 @@
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"/>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-
-                <br/>
-				
+<div class="container">
+    <div class="row">
+	
 				<nav class="navbar navbar-default">
 					<!-- here's where you put the container tag -->
 				  <div class="container">
@@ -49,9 +48,10 @@
                     <div class="alert alert-success" role="alert">{{ message }}</div>
                 {% endfor %}
                 {% block body %}{% endblock %}
-            </div>
-        </div>
-    </div>
+				
+	</div>
+</div> 
+   
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
