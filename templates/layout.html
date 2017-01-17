@@ -6,11 +6,12 @@
     <title>Teoreetiline Informaatika</title>
     <meta name="description" content="">
     <meta name="google" value="notranslate">
-	<meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
-	<meta name="apple-mobile-web-app-title" content="Teoreetiline Informaatika" />
+    <meta name="viewport"
+          content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no"/>
+    <meta name="apple-mobile-web-app-title" content="Teoreetiline Informaatika"/>
     <meta name="application-name" content="Teoreetiline Informaatika">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!--<meta name="viewport" content="width=device-width">-->
@@ -18,57 +19,51 @@
     <meta property="og:url" content="http://estimol.eu">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Abimees">
-	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}"/>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}"/>
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"/>
-	<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+    </script>
 </head>
 <body>
 <div class="container">
     <div class="row">
-	
-				<nav class="navbar navbar-default">
-					<!-- here's where you put the container tag -->
-				  <div class="container-fluid">
-			
-					<div class="collapse navbar-collapse">
-					  <ul class="nav navbar-nav">
+
+        <nav class="navbar navbar-default">
+            <!-- here's where you put the container tag -->
+            <div class="container">
+                <div class="row">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
                             {% if session.logged_in %}
-							    <li><a href="{{ url_for('general') }}">TEST</a></li>
-								<li><a href="{{ url_for('cards') }}">EDIT</a></li>
+                                <li><a href="{{ url_for('general') }}">TEST</a></li>
+                                <li><a href="{{ url_for('cards') }}">EDIT</a></li>
                                 <!--<li><a href="{{ url_for('code') }}">code</a></li>-->
                                 <li><a href="{{ url_for('logout') }}">log out</a></li>
                             {% else %}
                                 <li><a href="{{ url_for('login') }}">log in</a></li>
                             {% endif %}
                         </ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="{{ url_for(card_type) }}" id="nextCard" class="btn btn-lg text-white text-uppercase btn-primary btn-block">
-									Next
-								</a>
-							</li>
-						</ul>
-					</div>
-				  </div> <!-- close the container tag -->
-				</nav>
-				
+                    </div>
+                </div>
+            </div> <!-- close the container tag -->
+        </nav>
 
-                {% for message in get_flashed_messages() %}
-                    <div class="alert alert-success" role="alert">{{ message }}</div>
-                {% endfor %}
-                {% block body %}{% endblock %}
-				
-	</div>
-</div> 
-   
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/8cea844162.js"></script>
-    <script src="{{ url_for('static', filename='fastclick.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='general.js') }}"></script>
+
+        {% for message in get_flashed_messages() %}
+            <div class="alert alert-success" role="alert">{{ message }}</div>
+        {% endfor %}
+        {% block body %}{% endblock %}
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/8cea844162.js"></script>
+<script src="{{ url_for('static', filename='fastclick.min.js') }}"></script>
+<script src="{{ url_for('static', filename='general.js') }}"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function () {
     if ($('.memorizePanel').length != 0) {
 
-        $('.flipCard').click(function(){
+        $('.flipCard').click(function () {
             if ($('.cardFront').is(":visible") == true) {
                 $('.cardFront').hide();
                 $('.cardBack').show();
@@ -14,14 +14,14 @@ $(document).ready(function(){
 
     if ($('.cardForm').length != 0) {
 
-        $('.cardForm').submit(function(){
+        $('.cardForm').submit(function () {
 
             var frontTrim = $.trim($('#front').val());
             $('#front').val(frontTrim);
             var backTrim = $.trim($('#back').val());
             $('#back').val(backTrim);
 
-            if (! $('#front').val() || ! $('#back').val()) {
+            if (!$('#front').val() || !$('#back').val()) {
                 return false;
             }
         });

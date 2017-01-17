@@ -84,11 +84,11 @@ def filter_cards(filter_name):
         return redirect(url_for('login'))
 
     filters = {
-        "all":      "where 1 = 1",
-        "general":  "where type = 1",
-        "code":     "where type = 2",
-        "known":    "where known = 1",
-        "unknown":  "where known = 0",
+        "all": "where 1 = 1",
+        "general": "where type = 1",
+        "code": "where type = 2",
+        "known": "where known = 1",
+        "unknown": "where known = 0",
     }
 
     query = filters.get(filter_name)
@@ -254,7 +254,7 @@ def mark_known(card_id, card_type):
     flash('Card marked as known.')
     return redirect(url_for(card_type))
 
-	
+
 @app.route('/mark_all_unknown', methods=['GET', 'POST'])
 def mark_all_unknown():
     if not session.get('logged_in'):
@@ -265,7 +265,7 @@ def mark_all_unknown():
     flash('All cards are unknown.')
     return redirect(url_for('cards'))
 
-	
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
