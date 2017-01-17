@@ -19,7 +19,7 @@ textarea {
 }
 
 .alignMiddle {
-    height: 16em;
+    height: 14em;
     display: table-cell;
     vertical-align: middle;
 }
