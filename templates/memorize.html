@@ -55,7 +55,7 @@
                         <div class="panel panel-primary cardBack flipCard">
                             <div class="panel-body">
                                 <div class="alignContainer">
-                                    <p class="alignMiddle frontText">
+                                    <h4 class="alignMiddle frontText">
                                         {% if card.type == 1 %}
                                             {% if short_answer %}
                                                 <p class="text-center largerText">
@@ -67,7 +67,7 @@
                                         {% else %}
                                             <pre>{{ card.back|safe }}</pre>
                                         {% endif %}
-                                    </p>
+                                    </h4>
                                 </div>
                             </div>
                         </div>
