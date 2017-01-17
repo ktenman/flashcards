@@ -20,6 +20,10 @@
     <meta property="og:title" content="Abimees">
 	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}"/>
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"/>
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
@@ -32,7 +36,7 @@
 					  <ul class="nav navbar-nav">
                             {% if session.logged_in %}
 							    <li><a href="{{ url_for('general') }}">TEST</a></li>
-								<li><a href="{{ url_for('cards') }}">MUUDA</a></li>
+								<li><a href="{{ url_for('cards') }}">EDIT</a></li>
                                 <!--<li><a href="{{ url_for('code') }}">code</a></li>-->
                                 <li><a href="{{ url_for('logout') }}">log out</a></li>
                             {% else %}
