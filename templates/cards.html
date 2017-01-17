@@ -68,9 +68,15 @@
                 </td>
             </tr>
         {% endfor %}
+		{% if filter_name == "known" %}
+			<tr>
+				<td colspan="2" align="center">
+					<a href="/mark_all_unknown" class="btn btn-danger btn-xs text-uppercase">
+						mark all unknown
+					</a>
+				</td>
+			 </tr>    
+        {% endif %}
     </table>
-
-
-
 
 {% endblock %}
