@@ -61,13 +61,6 @@
                     {% endif %}
                 </td>
             </tr>
-        {% else %}
-            <tr>
-                <td>
-                    <em>No cards to show.</em>
-                </td>
-            </tr>
-        {% endfor %}
 		{% if filter_name == "known" %}
 			<tr>
 				<td colspan="2" align="center">
@@ -77,6 +70,13 @@
 				</td>
 			 </tr>    
         {% endif %}
+        {% else %}
+            <tr>
+                <td>
+                    <em>No cards to show.</em>
+                </td>
+            </tr>
+        {% endfor %}
     </table>
 
 {% endblock %}
