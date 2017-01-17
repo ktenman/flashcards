@@ -12,10 +12,8 @@ textarea {
 }
 
 .alignContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: table;
+    width: 100%;
 }
 
 .alignMiddle {
