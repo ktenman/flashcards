@@ -58,13 +58,17 @@
                 </td>
                 <td class="cardContent">
                     <h4>
-                        {{ card.front }}
+                        {% if card.type == 1 %}
+                            {{ card.front }}
+                        {% else %}
+                            Sõnastus:&nbsp;{{ card.front }}
+                        {% endif %}
                     </h4>
-{#                    {% if card.type == 1 %}#}
-                        {{ card.back|replace("\n", "<br />")|safe }}
-{#                    {% else %}#}
-{#                        <pre>{{ card.back|safe }}</pre>#}
-{#                    {% endif %}#}
+                    {#                    {% if card.type == 1 %}#}
+                    {{ card.back|replace("\n", "<br />")|safe }}
+                    {#                    {% else %}#}
+                    {#                        <pre>{{ card.back|safe }}</pre>#}
+                    {#                    {% endif %}#}
                 </td>
             </tr>
         {% else %}
