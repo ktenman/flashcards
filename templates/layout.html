@@ -37,9 +37,9 @@
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
                             {% if session.logged_in %}
-                                <li><a href="{{ url_for('general') }}">TEST</a></li>
+                                <li><a href="{{ url_for('general') }}">MÕISTED</a></li>
+                                <li><a href="{{ url_for('code') }}">TEOREEMID</a></li>
                                 <li><a href="{{ url_for('cards') }}">EDIT</a></li>
-                                <!--<li><a href="{{ url_for('code') }}">code</a></li>-->
                                 <li><a href="{{ url_for('logout') }}">log out</a></li>
                             {% else %}
                                 <li><a href="{{ url_for('login') }}">log in</a></li>
