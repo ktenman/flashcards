@@ -1,12 +1,8 @@
 ![](http://s015.radikal.ru/i330/1701/fd/9a485e5426be.png)
-
-[url=http://radikal.ru/big/vasdapbqiv65f][img]http://s019.radikal.ru/i620/1701/a7/d3af9c088c77t.jpg[/img][/url]
-
-[url=http://radikal.ru/big/7x1ysduibhb55][img]http://s020.radikal.ru/i721/1701/0b/1b13dba6c3e9t.jpg[/img][/url]
-
-[url=http://radikal.ru/big/0zti7fvz60t5y][img]http://s61.radikal.ru/i174/1701/6e/966a38d713fat.jpg[/img][/url]
-
-[url=http://radikal.ru/big/vbas4gijyycz6][img]http://s020.radikal.ru/i720/1701/52/871a34544d02t.jpg[/img][/url]
+![](http://s020.radikal.ru/i721/1701/0b/1b13dba6c3e9.png)
+![](http://s61.radikal.ru/i174/1701/6e/966a38d713fa.png)
+![](http://s020.radikal.ru/i720/1701/52/871a34544d02.png)
+![](http://s015.radikal.ru/i330/1701/fd/9a485e5426be.png)
 
 # 1. install docker
 https://docs.docker.com/engine/installation/
