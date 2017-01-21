@@ -1,7 +1,3 @@
-input[type="radio"]:checked{
-    visibility:hidden;
-}
-
 .cardContent, h4 {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
