@@ -32,7 +32,7 @@ PASSWORD='your-password'
 ```
 ## 3. run
 --------
-install docker and then run:
+execute command
 ```
 sh start.sh
 ```
