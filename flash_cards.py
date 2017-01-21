@@ -58,7 +58,7 @@ def close_db(error):
 @app.route('/')
 def index():
     if session.get('logged_in'):
-        return redirect(url_for('general'))
+        return redirect(url_for('index'))
     else:
         return redirect(url_for('login'))
 
