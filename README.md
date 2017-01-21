@@ -19,8 +19,8 @@ Screenshots
 Installation
 ============
 
-# 1. install docker
--------------------
+1. install docker
+-----------------
 https://docs.docker.com/engine/installation/
 
 # 2. setup
