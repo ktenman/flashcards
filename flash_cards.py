@@ -71,7 +71,7 @@ def cards():
     query = '''
         SELECT id, type, front, back, known
         FROM cards
-        ORDER BY id DESC
+        ORDER BY id ASC
     '''
     cur = db.execute(query)
     cards = cur.fetchall()
