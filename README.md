@@ -14,4 +14,4 @@ install docker and then run:
 sh start.sh
 ```
 # 4. open
-http://localhost
+[http://localhost](http://localhost)
