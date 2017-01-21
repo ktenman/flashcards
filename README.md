@@ -52,6 +52,7 @@ Use buttons on keyboard:
 Credits
 =======
 A huge thanks goes out to all the contributors!
+
 Peeter Normak, Alari Alev, Alex Neil, Kerttu Tihti, Elinda Tragel
 
 
