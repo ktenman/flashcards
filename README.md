@@ -43,7 +43,7 @@ sh start.sh
 Tutorial
 ========
 Use buttons on keyboard:
-Next card: <kbd>Space</kbd> or <kbd>&rarr;<kbd>
+Next card: <kbd>Space</kbd> or <kbd>&rarr;</kbd>
 Flip card: <kbd>Enter</kbd> or <kbd>	&#x2191;</kbd>
 Known card: <kbd>S</kbd> or<kbd>M</kbd> or<kbd>K</kbd>
 
