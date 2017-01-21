@@ -4,7 +4,7 @@ Table of contents
   * [Table of contents](#table-of-contents)
   * [Screenshots](#screenshots)
   * [Installation](#installation)
-    * [#_1._install_docker](1. install docker)
+    * [#1. install docker](#_1._install_docker)
     * [Local files](#local-files)
     
 Screenshots
