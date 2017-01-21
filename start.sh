@@ -1,5 +1,6 @@
 #!bin/bash
 #docker cp cs-flash-cards:/src/db/cards.db `pwd`;
+git pull
 docker stop cs-flash-cards && docker rm cs-flash-cards;
 docker rmi cs-flash-cards;
 docker build . -t cs-flash-cards;
