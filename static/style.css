@@ -1,5 +1,5 @@
 .cardContent, h4 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 textarea {
@@ -38,4 +38,3 @@ textarea {
 .navbar-nav > li, .navbar-nav {
     float: left !important;
 }
-
