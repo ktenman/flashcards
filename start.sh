@@ -1,8 +1,7 @@
 #!bin/bash
-#docker cp cs-flash-cards:/src/db/cards.db `pwd`;
 #git pull
-docker stop cs-flash-cards && docker rm cs-flash-cards;
-docker rmi cs-flash-cards;
-docker build . -t cs-flash-cards;
-docker run -d -p 80:8000 --name cs-flash-cards -v `pwd`:/src/db cs-flash-cards;
+docker stop ti-flash-cards && docker rm ti-flash-cards;
+docker rmi ti-flash-cards;
+docker build . -t ti-flash-cards;
+docker run -d -p 80:8000 --name ti-flash-cards -v `pwd`:/src/db ti-flash-cards;
 docker volume rm $(docker volume ls -qf dangling=true);
