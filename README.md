@@ -5,6 +5,7 @@ Table of contents
   * [Screenshots](#screenshots)
   * [Installation](#installation)
   * [Tutorial](#tutorial)
+  * [Credits](#credits)
     
 Screenshots
 ===========
@@ -47,4 +48,10 @@ Use buttons on keyboard:
 * Next card: <kbd>Space</kbd> or <kbd>&rarr;</kbd>
 * Flip card: <kbd>Enter</kbd> or <kbd>	&#x2191;</kbd> or <kbd>&#x2193;</kbd>
 * Known card: <kbd>S</kbd> or <kbd>M</kbd> or <kbd>K</kbd>
+
+Credits
+=======
+A huge thanks goes out to all the contributors!
+Peeter Normak, Alari Alev, Alex Neil, Kerttu Tihti, Elinda Tragel
+
 
