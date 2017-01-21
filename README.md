@@ -1,4 +1,4 @@
-![](http://radikal.ru/lfp/s015.radikal.ru/i330/1701/fd/9a485e5426be.png)
+![](http://radikal.ru/lfp/s015.radikal.ru/i330/1701/fd/9a485e5426be.png/htm)
 
 [url=http://radikal.ru/big/vasdapbqiv65f][img]http://s019.radikal.ru/i620/1701/a7/d3af9c088c77t.jpg[/img][/url]
 
