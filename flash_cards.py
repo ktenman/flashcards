@@ -58,7 +58,7 @@ def close_db(error):
 @app.route('/')
 def index():
     if session.get('logged_in'):
-        return redirect(url_for('index'))
+        return redirect(url_for('general'))
     else:
         return redirect(url_for('login'))
 
@@ -277,7 +277,7 @@ def login():
         else:
             session['logged_in'] = True
             session.permanent = True  # stay logged in
-            return redirect(url_for('cards'))
+            return redirect(url_for('general'))
     return render_template('login.html', error=error)
 
 
