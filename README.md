@@ -43,5 +43,5 @@ sh start.sh
 Tutorial
 ========
 Use buttons on keyboard:
-<kbd>Alt</kbd>+<kbd>F2</kbd>
+Next card: <kbd>Space</kbd> or <kbd>&rarr;<kbd>
 
