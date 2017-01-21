@@ -71,7 +71,7 @@ def cards():
     query = '''
         SELECT id, type, front, back, known
         FROM cards
-        ORDER BY id ASC
+        ORDER BY id DESC
     '''
     cur = db.execute(query)
     cards = cur.fetchall()
@@ -97,7 +97,7 @@ def filter_cards(filter_name):
         return redirect(url_for('cards'))
 
     db = get_db()
-    fullquery = "SELECT id, type, front, back, known FROM cards " + query + " ORDER BY id ASC"
+    fullquery = "SELECT id, type, front, back, known FROM cards " + query + " ORDER BY id DESC"
     cur = db.execute(fullquery)
     cards = cur.fetchall()
     return render_template('cards.html', cards=cards, filter_name=filter_name)
