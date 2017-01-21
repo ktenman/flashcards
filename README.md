@@ -4,7 +4,7 @@ Table of contents
   * [Table of contents](#table-of-contents)
   * [Screenshots](#screenshots)
   * [Installation](#installation)
-    * [STDIN](#stdin)
+    * [# 1. install docker](# 1. install docker)
     * [Local files](#local-files)
     
 Screenshots
@@ -19,9 +19,8 @@ Screenshots
 Installation
 ============
 
-STDIN
------
 # 1. install docker
+-------------------
 https://docs.docker.com/engine/installation/
 
 # 2. setup
