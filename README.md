@@ -38,6 +38,7 @@ sh start.sh
 ```
 ## 4. open
 ---------
+Sign in with your username and password.
 [http://localhost](http://localhost)
 
 Tutorial
