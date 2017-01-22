@@ -30,6 +30,10 @@ curl -sSL https://get.docker.com/ | sh
 sudo apt-get install git
 git clone https://github.com/ktenman/flashcards.git
 cd flashcards
+echo '#!/bin/sh
+cd /root/flashcards/
+sh start.sh > logid.log &' > startup.sh
+crontab -l | { cat; echo "@reboot  /root/startup.sh"; } | crontab -
 sh start.sh
 
 
