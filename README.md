@@ -9,7 +9,8 @@ Table of contents
     
 Screenshots
 ===========
-
+![](http://s019.radikal.ru/i611/1701/32/3b2e8927f0c2.png)
+![](http://s018.radikal.ru/i513/1701/78/c2cd4bc21bab.png)
 ![](http://s015.radikal.ru/i330/1701/fd/9a485e5426be.png)
 ![](http://s020.radikal.ru/i721/1701/0b/1b13dba6c3e9.png)
 ![](http://s61.radikal.ru/i174/1701/6e/966a38d713fa.png)
