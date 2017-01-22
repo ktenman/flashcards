@@ -21,6 +21,13 @@ Installation
 
 ## 1. install docker
 -------------------
+```
+# This script is meant for quick & easy install via:
+curl -sSL https://get.docker.com/ | sh
+# or:
+wget -qO- https://get.docker.com/ | sh
+#
+```
 https://docs.docker.com/engine/installation/
 
 ## 2. setup
