@@ -19,7 +19,7 @@ Screenshots
 Installation
 ============
 
-## 1. install docker
+## 1. easy install docker
 -------------------
 ```
 #!/bin/sh
@@ -35,10 +35,10 @@ sh start.sh
 
 ```
 https://docs.docker.com/engine/installation/
-
+```
 username: admin
-
 password: default
+```
 
 ## 2. custom password
 ---------------------
