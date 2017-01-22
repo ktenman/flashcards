@@ -19,12 +19,33 @@ Screenshots
 Installation
 ============
 
-## 1. install docker
+## 1. easy install docker
 -------------------
-https://docs.docker.com/engine/installation/
+```
+#!/bin/sh
+set -e
+# This script is meant for quick & easy install via:
+sudo apt-get update
+curl -sSL https://get.docker.com/ | sh
+sudo apt-get install git
+git clone https://github.com/ktenman/flashcards.git
+cd flashcards
+echo '#!/bin/sh
+cd /root/flashcards/
+sh start.sh > logid.log &' > startup.sh
+crontab -l | { cat; echo "@reboot  /root/startup.sh"; } | crontab -
+sh start.sh
 
-## 2. setup
-----------
+
+```
+https://docs.docker.com/engine/installation/
+```
+username: admin
+password: default
+```
+
+## 2. custom password
+---------------------
 create config.txt
 ```
 SECRET_KEY='O5$&2L36sVWNswHL5WoD&17Y-your-strong-secret-key-ej5!5NC5OmYaYF@B49Y645Di'
