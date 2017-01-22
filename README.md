@@ -22,6 +22,8 @@ Installation
 ## 1. install docker
 -------------------
 ```
+#!/bin/sh
+set -e
 # This script is meant for quick & easy install via:
 sudo apt-get update
 sudo apt-get install git
