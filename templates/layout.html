@@ -19,12 +19,17 @@
     <meta property="og:url" content="http://estimol.eu">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Abimees">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}"/>
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"/>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
-          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+          messageStyle: "none",
+          tex2jax: {
+            preview: "none",
+            inlineMath: [['$','$'], ['\\(','\\)']]
+            }
         });
 
     </script>
