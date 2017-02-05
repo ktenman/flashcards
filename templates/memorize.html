@@ -18,7 +18,7 @@
             <br/>
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="panel panel-default cardFront">
+                    <div class="panel panel-default cardFront flipCard">
                         <div class="panel-body">
                             <div class="alignContainer">
                                 <div class="alignMiddle frontText">
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-primary cardBack">
+                    <div class="panel panel-primary cardBack flipCard">
                         <div class="panel-body">
                             <div class="alignContainer">
                                 <h4 class="alignMiddle frontText">
@@ -68,16 +68,6 @@
         </div>
     </div>
     <script>
-
-        $(".cardFront").hammer()
-            .on("swipeleft", function () {
-                $("#nextCard")[0].click();
-            })
-            .on("swiperight", function () {
-                $("#nextCard")[0].click();
-            });
-
-
         $(document).keypress(function (e) {
             console.log(e.which);
             var keyS = e.which == 115;
