@@ -68,6 +68,17 @@
         </div>
     </div>
     <script>
+        $(function () {
+            var cardFront = document.getElementById("cardFront");
+
+            Hammer(cardFront).on("swipeleft", function () {
+                $("#nextCard")[0].click();
+            });
+
+            Hammer(cardFront).on("swiperight", function () {
+                $("#nextCard")[0].click();
+            });
+        });
         $(document).keypress(function (e) {
             console.log(e.which);
             var keyS = e.which == 115;
