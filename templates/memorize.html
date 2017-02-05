@@ -18,7 +18,7 @@
             <br/>
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="panel panel-default cardFront flipCard">
+                    <div class="panel panel-default cardFront">
                         <div class="panel-body">
                             <div class="alignContainer">
                                 <div class="alignMiddle frontText">
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-primary cardBack flipCard">
+                    <div class="panel panel-primary cardBack">
                         <div class="panel-body">
                             <div class="alignContainer">
                                 <h4 class="alignMiddle frontText">
@@ -69,7 +69,7 @@
     </div>
     <script>
 
-        $(".cardFront").hammer({/* options */})
+        $(".cardFront").hammer()
             .on("swipeleft", function () {
                 $("#nextCard")[0].click();
             })
@@ -78,41 +78,41 @@
             });
 
 
-{#        $(document).keypress(function (e) {#}
-{#            console.log(e.which);#}
-{#            var keyS = e.which == 115;#}
-{#            var keyM = e.which == 109;#}
-{#            var keyK = e.which == 107;#}
-{#            if (keyM || keyS || keyK) {#}
-{#                $("#known")[0].click();#}
-{#            }#}
-{#            var space = e.which == 32;#}
-{#            if (space) {#}
-{#                $("#nextCard")[0].click();#}
-{#            }#}
-{#            var enter = e.which == 13;#}
-{#            if (enter) {#}
-{#                $(".flipCard").click();#}
-{#            }#}
-{#        });#}
-{#        $(document).keydown(function (e) {#}
-{#            switch (e.which) {#}
-{#                case 38: // up#}
-{#                    $(".flipCard").click();#}
-{#                    break;#}
-{##}
-{#                case 39: // right#}
-{#                    $("#nextCard")[0].click();#}
-{#                    break;#}
-{##}
-{#                case 40: // down#}
-{#                    $(".flipCard").click();#}
-{#                    break;#}
-{##}
-{#                default:#}
-{#                    return; // exit this handler for other keys#}
-{#            }#}
-{#            e.preventDefault(); // prevent the default action (scroll / move caret)#}
-{#        });#}
+        $(document).keypress(function (e) {
+            console.log(e.which);
+            var keyS = e.which == 115;
+            var keyM = e.which == 109;
+            var keyK = e.which == 107;
+            if (keyM || keyS || keyK) {
+                $("#known")[0].click();
+            }
+            var space = e.which == 32;
+            if (space) {
+                $("#nextCard")[0].click();
+            }
+            var enter = e.which == 13;
+            if (enter) {
+                $(".flipCard").click();
+            }
+        });
+        $(document).keydown(function (e) {
+            switch (e.which) {
+                case 38: // up
+                    $(".flipCard").click();
+                    break;
+
+                case 39: // right
+                    $("#nextCard")[0].click();
+                    break;
+
+                case 40: // down
+                    $(".flipCard").click();
+                    break;
+
+                default:
+                    return; // exit this handler for other keys
+            }
+            e.preventDefault(); // prevent the default action (scroll / move caret)
+        });
     </script>
 {% endblock %}
