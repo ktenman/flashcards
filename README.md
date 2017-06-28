@@ -12,7 +12,6 @@ Screenshots
 ![](https://github.com/ktenman/flashcards/blob/master/screenshots/6d9215e6a27f.png?raw=true)![](https://github.com/ktenman/flashcards/blob/master/screenshots/30c53c9b970e.png?raw=true)
 ![](https://github.com/ktenman/flashcards/blob/master/screenshots/871a34544d02.png?raw=true)
 ![](https://github.com/ktenman/flashcards/blob/master/screenshots/966a38d713fa.png?raw=true)
-![](http://s020.radikal.ru/i720/1701/52/871a34544d02.png)
 ![](http://s015.radikal.ru/i330/1701/fd/9a485e5426be.png)
 
 Installation
