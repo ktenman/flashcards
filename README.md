@@ -9,10 +9,9 @@ Table of contents
     
 Screenshots
 ===========
-![](https://github.com/ktenman/flashcards/blob/master/screenshots/1b13dba6c3e9?raw=true)![](http://s018.radikal.ru/i507/1701/0d/30c53c9b970e.png)
-![](http://s015.radikal.ru/i330/1701/fd/9a485e5426be.png)
-![](http://s020.radikal.ru/i721/1701/0b/1b13dba6c3e9.png)
-![](http://s61.radikal.ru/i174/1701/6e/966a38d713fa.png)
+![](https://github.com/ktenman/flashcards/blob/master/screenshots/6d9215e6a27f.png?raw=true)![](https://github.com/ktenman/flashcards/blob/master/screenshots/30c53c9b970e.png?raw=true)
+![](https://github.com/ktenman/flashcards/blob/master/screenshots/871a34544d02.png?raw=true)
+![](https://github.com/ktenman/flashcards/blob/master/screenshots/966a38d713fa.png?raw=true)
 ![](http://s020.radikal.ru/i720/1701/52/871a34544d02.png)
 ![](http://s015.radikal.ru/i330/1701/fd/9a485e5426be.png)
 
