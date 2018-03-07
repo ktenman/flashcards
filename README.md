@@ -17,20 +17,10 @@ Screenshots
 Installation
 ============
 
-## 1. easy install docker
+## 1. easy install docker and run
 -------------------
 ```
-#!/bin/sh
-set -e
-# This script is meant for quick & easy install via:
-sudo apt-get update
-curl -sSL https://get.docker.com/ | sh
-sudo apt-get install git
-git clone https://github.com/ktenman/flashcards.git
-cd flashcards
-sh start.sh
-
-
+curl https://raw.githubusercontent.com/ktenman/flashcards/master/install.sh | bash -s
 ```
 https://docs.docker.com/engine/installation/
 ```
